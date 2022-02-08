@@ -24,5 +24,5 @@ public class LeituraArquivoLarguraFixaStepConfig {
                 .writer(writer)
                 .build();
     }
-    
+
 }
