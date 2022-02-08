@@ -14,6 +14,7 @@ public class LeituraArquivoMultiplosFormatosStepConfig {
     @Autowired
     public StepBuilderFactory stepBuilderFactory;
 
+    @SuppressWarnings("unchecked")
     @Bean
     public Step leituraArquivoMultiplosFormatosStep(
             FlatFileItemReader leituraArquivoMultiplosFormatosReader,
