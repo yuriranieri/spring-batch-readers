@@ -1,9 +1,9 @@
 CREATE TABLE lancamento (
 	codigoNaturezaDespesa INT,
 	descricaoNaturezaDespesa TEXT,
-	descricaoLancamento TEXT,
-	dataLancamento DATE,
-	valorLancamento DOUBLE
+    descricaoLancamento TEXT,
+	data DATE,
+	valor DOUBLE
 );
 
 INSERT INTO lancamento VALUES (44905224,'EQUIPAMENTO DE PROTEÇÃO SEGURANÇA E SOCORRO','Alarme','2020-05-01',1000);
