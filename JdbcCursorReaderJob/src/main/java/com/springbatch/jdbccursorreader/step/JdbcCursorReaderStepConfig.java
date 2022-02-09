@@ -16,12 +16,12 @@ public class JdbcCursorReaderStepConfig {
     public StepBuilderFactory stepBuilderFactory;
 
     @Bean
-    public Step jdbcCursorReaderStep(ItemReader<Cliente> jdbcCursorReader, ItemWriter<Cliente> jdbcCursorWriter) {
+    public Step jdbcCursorReaderStep(ItemReader<Cliente> reader, ItemWriter<Cliente> writer) {
         return stepBuilderFactory
                 .get("jdbcCursorReaderStep")
                 .<Cliente, Cliente>chunk(1)
-                .reader(jdbcCursorReader)
-                .writer(jdbcCursorWriter)
+                .reader(reader)
+                .writer(writer)
                 .build();
     }
 

@@ -17,10 +17,10 @@ public class JdbcCursorReaderJobConfig {
     public JobBuilderFactory jobBuilderFactory;
 
     @Bean
-    public Job jdbcCursorReaderJob(Step jdbcCursorReaderStep) {
+    public Job jdbcCursorReaderJob(Step step) {
         return jobBuilderFactory
                 .get("jdbcCursorReaderJob")
-                .start(jdbcCursorReaderStep)
+                .start(step)
                 .incrementer(new RunIdIncrementer())
                 .build();
     }
