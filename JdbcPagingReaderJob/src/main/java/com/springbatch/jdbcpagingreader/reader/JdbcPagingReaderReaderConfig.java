@@ -36,6 +36,7 @@ public class JdbcPagingReaderReaderConfig {
         queryProvider.setSelectClause("select *"); // informa oq vamos consultar
         queryProvider.setFromClause("from cliente"); // informa a tabela q vamos consultar
         queryProvider.setSortKey("email"); // criterio de ordenacao
+        queryProvider.setWhereClause("where idade > 18");
         return queryProvider;
     }
 
